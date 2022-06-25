@@ -6,9 +6,9 @@ const App = () => {
   return (
     <ChakraProvider>
       
-      <div>
+      
         <Footer />
-      </div>
+     
     </ChakraProvider>
   );
 };
