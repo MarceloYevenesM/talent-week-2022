@@ -1,5 +1,17 @@
+
+:root {
+  --color-black-coder: #131313;
+}
+
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* Permite usar rems 1 rem = 10px o 1px = 0.1rem */
+}
+
 body {
   margin: 0;
+  /* TODO:cambiar la fuente de la letra */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -11,3 +23,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+
+

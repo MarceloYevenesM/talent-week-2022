@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
+import { ChakraProvider } from "@chakra-ui/react";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
-    <div>App</div>
-  )
-}
+    <ChakraProvider>
+      
+      <div>
+        <Footer />
+      </div>
+    </ChakraProvider>
+  );
+};
 
 export default App;
