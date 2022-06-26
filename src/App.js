@@ -1,11 +1,11 @@
 import React from "react";
-import { ChakraProvider } from "@chakra-ui/react";
+import { ChakraProvider, Stack, Text } from "@chakra-ui/react";
 
 const App = () => {
     return (
         <ChakraProvider>
             <Stack>
-                
+                <Text>HOLA</Text>
             </Stack>
         </ChakraProvider>
     );
