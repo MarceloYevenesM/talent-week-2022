@@ -5,7 +5,7 @@ const App = () => {
     return (
         <ChakraProvider>
             <Stack>
-                <Text>HOLA</Text>
+                <Text>CONTAINER PORTADA</Text>
             </Stack>
         </ChakraProvider>
     );
