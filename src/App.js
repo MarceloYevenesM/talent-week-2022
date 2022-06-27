@@ -1,13 +1,17 @@
 import React from "react";
 import { ChakraProvider } from "@chakra-ui/react";
-import Footer from "./components/Footer";
+import Form from "./components/Form";
+
+
 
 const App = () => {
   return (
     <ChakraProvider>
       
-      <div>
-        <Footer />
+      <div className="body">
+        <Form />
+
+        
       </div>
     </ChakraProvider>
   );

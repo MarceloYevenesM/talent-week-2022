@@ -1,0 +1,28 @@
+
+.form{
+    background-color: #131313;
+    width: 916.6px;
+    height: 1450px;
+    -webkit-box-shadow: 5px 5px 0px 1px #ffffff;
+  box-shadow: 5px 5px 0px 1px #ffffff;
+  border: 2px solid white;
+}
+
+.form .containerForm{
+    
+}
+
+.input{
+    border: 1.5px solid #E0FF00;
+    width: 449.4px;
+    height: 62px;
+    padding: 0 18px;
+    font-size: 16px;
+    background-color: #131313;
+    color: white;
+}
+
+.input::placeholder{
+    color: #808080;
+}
+  
