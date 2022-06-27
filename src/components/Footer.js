@@ -10,7 +10,7 @@ const Footer = () => {
     <footer>
       <Flex
         w="100%"
-        h={{ base: "700", md: "320" }}
+        h={{ base: "700px", md: "400px", lg: "320px" }}
         bgColor="#131313"
         justify="space-around"
         alignItems="center"
