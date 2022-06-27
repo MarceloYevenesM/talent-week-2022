@@ -1,9 +1,10 @@
 import { Button, Flex, Text } from "@chakra-ui/react";
 import React from "react";
-import "../styles/form.css";
+
 
 const Form = () => {
   return (
+    <div className="form">
     <Flex
       width="100%"
       height="100%"
@@ -122,6 +123,7 @@ const Form = () => {
         *Por dudas o consultas, puedes escribirnos aoutcomes@coderhouse.com
       </Text>
     </Flex>
+    </div>
   );
 };
 

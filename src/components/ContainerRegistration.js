@@ -1,0 +1,39 @@
+import { Flex, Text } from "@chakra-ui/react";
+import React from "react";
+import "../styles/form.css";
+import Form from "./Form";
+
+const ContainerRegistration = () => {
+  return (
+    <Flex
+      className="formContainer"
+      width="100%"
+      height="1920px"
+      direction="column"
+      alignItems="center"
+      justify="space-around"
+    >
+      <Flex
+        width="100%"
+        direction="column"
+        alignItems=""
+        gap={7}
+        p={55}
+        className="form-title"
+      >
+        <Text fontSize="72px">SAVE THE DATE</Text>
+        <Text ontSize="25px">DESDE EL MIERCOLES 27 AL JUEVES 28 DE JUNIO</Text>
+      </Flex>
+      <Form />
+      <Flex gap={5} width="100%" justify="space-around">
+        <Text className="carrusel">TALENTWEEK</Text>
+        <Text className="carrusel">TALENTWEEK</Text>
+        <Text className="carrusel">TALENTWEEK</Text>
+        <Text className="carrusel">TALENTWEEK</Text>
+        <Text className="carrusel">TALENTWEEK</Text>
+      </Flex>
+    </Flex>
+  );
+};
+
+export default ContainerRegistration;

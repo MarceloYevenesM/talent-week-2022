@@ -1,17 +1,12 @@
 import React from "react";
 import { ChakraProvider } from "@chakra-ui/react";
-import Form from "./components/Form";
-
-
+import ContainerRegistration from "./components/ContainerRegistration";
 
 const App = () => {
   return (
     <ChakraProvider>
-      
       <div className="body">
-        <Form />
-
-        
+        <ContainerRegistration />
       </div>
     </ChakraProvider>
   );

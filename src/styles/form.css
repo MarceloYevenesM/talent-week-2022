@@ -1,3 +1,10 @@
+.formContainer{
+    background-image: url("../assets/Inscripcion.png");
+}
+
+
+
+
 
 .form{
     background-color: #131313;
@@ -5,7 +12,7 @@
     height: 1450px;
     -webkit-box-shadow: 5px 5px 0px 1px #ffffff;
   box-shadow: 5px 5px 0px 1px #ffffff;
-  border: 2px solid white;
+  border: 1px solid white;
 }
 
 .form .containerForm{
@@ -25,4 +32,9 @@
 .input::placeholder{
     color: #808080;
 }
-  
+
+.carrusel{
+    color: #E0FF00;
+    font-size: 40px;
+    
+}
