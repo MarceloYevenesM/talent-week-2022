@@ -10,7 +10,7 @@ const Footer = () => {
     <footer>
       <Flex
         w="100%"
-        h="320.4px"
+        h={{ base: "700", md: "320" }}
         bgColor="#131313"
         justify="space-around"
         alignItems="center"
@@ -68,9 +68,9 @@ const Footer = () => {
 
               <GridItem colStart={1} rowStart={2}>
                 <Grid w="100%" h="100%" templateRows="1fr 1fr 1fr 1fr">
-                  <a href="#">Inscripcion</a>
-                  <a href="#">Agenda</a>
-                  <a href="#">Date a conocer</a>
+                  <a href="#">Nosotros</a>
+                  <a href="#">Comunidad</a>
+                  <a href="#">Contacto</a>
                 </Grid>
               </GridItem>
             </Grid>
@@ -79,7 +79,7 @@ const Footer = () => {
           </Flex>
         </div>
         <div className="text">
-            <label>© Copyright 2021 - Todos los derechos reservados</label>
+          <label>© Copyright 2021 - Todos los derechos reservados</label>
         </div>
       </Flex>
     </footer>
