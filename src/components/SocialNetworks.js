@@ -1,5 +1,5 @@
-import { Center, Grid, GridItem, Image } from "@chakra-ui/react";
 import React from "react";
+import { Center, Grid, GridItem, Image } from "@chakra-ui/react";
 import logoFacebook from "../assets/icons/Facebook.png";
 import logoInstagram from "../assets/icons/Instagram.png";
 import logoLinkedin from "../assets/icons/Linkedin.png";

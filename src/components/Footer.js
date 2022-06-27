@@ -1,9 +1,9 @@
-import { Flex, Grid, GridItem, Image } from "@chakra-ui/react";
 import React from "react";
+import { Flex, Grid, GridItem, Image } from "@chakra-ui/react";
+import SocialNetworks from "./SocialNetworks";
 import logoTw from "../assets/Logo-TW.png";
 import textTW from "../assets/talent-week.png";
 import logoCoder from "../assets/logo-coder.png";
-import SocialNetworks from "./SocialNetworks";
 
 const Footer = () => {
   return (
@@ -39,10 +39,10 @@ const Footer = () => {
 
               <GridItem colStart={2} rowStart={2}>
                 <Grid w="100%" h="100%">
-                  <a href="#">Inscripcion</a>
-                  <a href="#">Agenda</a>
-                  <a href="#">Date a conocer</a>
-                  <a href="#">Empresas</a>
+                  <a href="/#">Inscripcion</a>
+                  <a href="/#">Agenda</a>
+                  <a href="/#">Date a conocer</a>
+                  <a href="/#">Empresas</a>
                 </Grid>
               </GridItem>
             </Grid>
@@ -68,9 +68,9 @@ const Footer = () => {
 
               <GridItem colStart={1} rowStart={2}>
                 <Grid w="100%" h="100%" templateRows="1fr 1fr 1fr 1fr">
-                  <a href="#">Nosotros</a>
-                  <a href="#">Comunidad</a>
-                  <a href="#">Contacto</a>
+                  <a href="/#">Nosotros</a>
+                  <a href="/#">Comunidad</a>
+                  <a href="/#">Contacto</a>
                 </Grid>
               </GridItem>
             </Grid>
