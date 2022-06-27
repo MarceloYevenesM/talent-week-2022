@@ -1,7 +1,7 @@
-import { Flex, Text } from "@chakra-ui/react";
 import React from "react";
-import "../styles/form.css";
+import { Flex, Text } from "@chakra-ui/react";
 import Form from "./Form";
+import "../styles/form.css";
 
 const ContainerRegistration = () => {
   return (
@@ -22,7 +22,9 @@ const ContainerRegistration = () => {
         className="form-title"
       >
         <Text fontSize="72px">SAVE THE DATE</Text>
-        <Text ontSize="25px">DESDE EL MIERCOLES 27 AL JUEVES 28 DE JUNIO</Text>
+        <Text fontSize="25px">
+          DESDE EL MIERCOLES 27 AL JUEVES 28 DE JULIO
+        </Text>
       </Flex>
       <Form />
       <Flex gap={5} width="100%" justify="space-around">
