@@ -1,12 +1,13 @@
 import React from "react";
-import { ChakraProvider, Stack, Text } from "@chakra-ui/react";
+import { ChakraProvider } from "@chakra-ui/react";
+
+import Portada from "./Containers/Portada";
+import theme from "./Theme/theme";
 
 const App = () => {
     return (
-        <ChakraProvider>
-            <Stack>
-                <Text>CONTAINER PORTADA</Text>
-            </Stack>
+        <ChakraProvider theme={theme}>
+            <Portada />
         </ChakraProvider>
     );
 };
