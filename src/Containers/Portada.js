@@ -2,6 +2,7 @@ import { Stack } from "@chakra-ui/react";
 
 import NavBar from "../Components/Navbar/NavBar";
 import Hero from "../Components/Portada/Hero";
+import Banner from "../Components/Banner/Banner";
 
 const Portada = () => {
     const gridImageProps = {
@@ -13,6 +14,7 @@ const Portada = () => {
         <Stack bgSize={"70px 70px, 70px 70px"} {...gridImageProps}>
             <NavBar />
             <Hero />
+            <Banner />
         </Stack>
     );
 };

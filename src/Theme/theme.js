@@ -22,7 +22,7 @@ export default extendTheme(theme, {
     textStyles: {
         h1: {
             fontFamily: "Gobold, sans-serif",
-            fontSize: "3.6rem",
+            fontSize: "4rem",
             fontStyle: "italic",
         },
         h2: {
@@ -49,12 +49,28 @@ export default extendTheme(theme, {
                 },
             },
         },
-        Buttons: {
+        Button: {
             baseStyle: {
-                background: "brand.300",
-                color: "brand.300",
-                padding: "5rem",
-                borderRadius: "0",
+                borderRadius: "0px",
+                fontWeight: "bold",
+                transition: "all .2s ease-in-out",
+                "&:hover": {
+                    transform: "scale(1.02)",
+                },
+            },
+            variants: {
+                "coder-house": {
+                    bgColor: "brand.300",
+                    color: "brand.100",
+                },
+            },
+
+            sizes: {
+                xl: {
+                    fontSize: "1.6rem",
+                    padding: "24px",
+                    height: "34px",
+                },
             },
         },
     },
