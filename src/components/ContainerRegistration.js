@@ -1,7 +1,7 @@
 import React from "react";
 import { Flex, Text } from "@chakra-ui/react";
-import "../styles/form.css";
 import Form from "./Form";
+import "../styles/form.css";
 
 const ContainerRegistration = () => {
   return (
