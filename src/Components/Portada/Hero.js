@@ -1,25 +1,17 @@
 import { Button, Icon, Image, Stack, Text } from "@chakra-ui/react";
 import { motion } from "framer-motion";
-import { AiOutlineExclamation } from "react-icons/ai";
-
-import Banner from "../Banner/Banner";
+import { BsExclamationTriangleFill } from "react-icons/bs";
 
 const Hero = () => {
     return (
         <Stack paddingBottom={24} paddingLeft={24} paddingRight={24}>
-            <Stack
-                // animate={{ scale: 1 }}
-                as={motion.div}
-                height={"70vh"}
-                // initial={{ scale: 0 }}
-                p={12}
-            // transition="1s ease-in-out"
-            >
+            <Stack height={"70vh"}>
                 <Stack
                     alignItems={"center"}
                     direction={"row"}
                     height={"100%"}
                     justifyContent={"center"}
+                    marginBlock={6}
                     position={"relative"}
                 >
                     <Stack
@@ -44,19 +36,19 @@ const Hero = () => {
                     </Stack>
                     <Stack
                         alignItems={"flex-start"}
-                        animate={{ scale: 1 }}
+                        animate={{ opacity: 1 }}
                         as={motion.div}
                         bgColor={"brand.100"}
                         border={"4px"}
                         borderColor={"brand.200"}
                         boxShadow={"12px 12px 0px rgba(255, 255, 255, 1)"}
                         height={"350px"}
-                        initial={{ scale: 0 }}
+                        initial={{ opacity: 0 }}
                         justifyContent={"flex-end"}
                         maxWidth={"550px"}
                         position={"absolute"}
                         top={"50px"}
-                        transition=".5s ease-in-out"
+                        transition=".25s ease-in-out"
                         width={"100%"}
                         zIndex={1}
                     >
@@ -68,7 +60,7 @@ const Hero = () => {
                             </Text>
                             <Stack width={"200px"}>
                                 <Button size={"xl"} variant={"coder-house"}>
-                                    inscribite acá
+                                    Inscribite acá
                                 </Button>
                             </Stack>
                         </Stack>
@@ -96,8 +88,9 @@ const Hero = () => {
                                 direction={"row"}
                                 justifyContent={"center"}
                                 p={6}
+                                spacing={12}
                             >
-                                <Icon as={AiOutlineExclamation} h={"100px"} w={"100px"} />
+                                <Icon as={BsExclamationTriangleFill} h={"70px"} w={"70px"} />
                                 <Text fontSize="2rem" textStyle={"p"}>
                                     Si eres <strong>estudiante o graduado de coderhouse, </strong>
                                     podras entrar en contacto con más de...
@@ -107,14 +100,15 @@ const Hero = () => {
                         </Stack>
                     </Stack>
                     <Image
-                        animate={{ scale: 1 }}
+                        animate={{ opacity: 1 }}
                         as={motion.img}
                         boxSize={"500px"}
-                        initial={{ scale: 0 }}
+                        initial={{ opacity: 0 }}
+                        p={6}
                         position={"absolute"}
                         right={"300px"}
                         src="https://firebasestorage.googleapis.com/v0/b/sm-portfolio-4c746.appspot.com/o/circulo'logo.png?alt=media&token=e891fc71-4c1f-4a83-b343-71be280434ae"
-                        transition=".5s ease-in-out"
+                        transition="3s ease-in-out"
                     />
                 </Stack>
             </Stack>

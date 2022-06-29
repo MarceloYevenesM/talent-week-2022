@@ -22,7 +22,7 @@ export default extendTheme(theme, {
     textStyles: {
         h1: {
             fontFamily: "Gobold, sans-serif",
-            fontSize: "4rem",
+            fontSize: { base: "2.5rem", sm: "4rem" },
             fontStyle: "italic",
         },
         h2: {
