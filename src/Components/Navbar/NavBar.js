@@ -7,8 +7,8 @@ import NavItems from "./NavItems";
 import MenuToggle from "./MenuToggle";
 
 const variants = {
-    open: { x: "-100%" },
-    closed: { x: "0%" },
+    open: { x: "0%" },
+    closed: { x: "100%" },
 };
 
 const NavBar = () => {
@@ -40,7 +40,7 @@ const NavBar = () => {
                 </Text>
             </Stack>
             <MenuToggle onOpen={onOpen} />
-            <Stack
+            {/* <Stack
                 alignItems={"flex-end"}
                 animate={isOpen ? "open" : "closed"}
                 as={motion.div}
@@ -56,7 +56,7 @@ const NavBar = () => {
                 zIndex={10}
             >
                 <NavItems />
-            </Stack>
+            </Stack> */}
             <Stack direction={"row"} display={{ base: "none", md: "flex" }} spacing={6}>
                 <NavItems />
             </Stack>

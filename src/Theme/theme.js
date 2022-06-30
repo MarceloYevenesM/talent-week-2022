@@ -8,9 +8,18 @@ export default extendTheme(theme, {
                 height: "100%",
                 bgColor: "brand.100",
             },
+            body: {
+                overflowX: "hidden",
+            },
         },
     },
-
+    shadows: {
+        desktop: "12px 12px 0px rgba(255, 255, 255, 1)",
+        mobile: "6px 6px 0px rgba(255, 255, 255, 1)",
+    },
+    borders: {
+        border: ".5rem solid",
+    },
     colors: {
         brand: {
             100: "#131313",
@@ -68,8 +77,8 @@ export default extendTheme(theme, {
             sizes: {
                 xl: {
                     fontSize: "1.6rem",
-                    padding: "24px",
-                    height: "34px",
+                    padding: "2rem",
+                    height: "36px",
                 },
             },
         },
