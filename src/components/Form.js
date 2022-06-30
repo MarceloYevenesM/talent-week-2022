@@ -13,7 +13,7 @@ const Form = () => {
         justify="space-evenly"
       >
         <div className="containerInput">
-          <Text mb="8px" fontSize="18px" color="#FFFFFF">
+          <Text mb="8px" fontSize="1.125rem" color="#FFFFFF">
             Nombre completo
           </Text>
           <input
@@ -24,7 +24,7 @@ const Form = () => {
           />
         </div>
         <div className="containerInput">
-          <Text mb="8px" fontSize="18px" color="#FFFFFF">
+          <Text mb="8px" fontSize="1.125rem" color="#FFFFFF">
             País
           </Text>
           <input
@@ -35,7 +35,7 @@ const Form = () => {
           />
         </div>
         <div className="containerInput">
-          <Text mb="8px" fontSize="18px" color="#FFFFFF">
+          <Text mb="8px" fontSize="1.125rem" color="#FFFFFF">
             E-mail con el que te inscribiste en Coderhouse
           </Text>
           <input
@@ -46,7 +46,7 @@ const Form = () => {
           />
         </div>
         <div className="containerInput">
-          <Text mb="8px" fontSize="18px" color="#FFFFFF">
+          <Text mb="8px" fontSize="1.125rem" color="#FFFFFF">
             Teléfono
           </Text>
           <input
@@ -57,7 +57,7 @@ const Form = () => {
           />
         </div>
         <div className="containerInput">
-          <Text mb="8px" fontSize="18px" color="#FFFFFF">
+          <Text mb="8px" fontSize="1.125rem" color="#FFFFFF">
             Linkedin
           </Text>
           <input
@@ -68,7 +68,7 @@ const Form = () => {
           />
         </div>
         <div className="containerInput">
-          <Text mb="8px" fontSize="18px" color="#FFFFFF">
+          <Text mb="8px" fontSize="1.125rem" color="#FFFFFF">
             Portfolio
           </Text>
           <input
@@ -79,7 +79,7 @@ const Form = () => {
           />
         </div>
         <div className="containerInput">
-          <Text mb="8px" fontSize="18px" color="#FFFFFF">
+          <Text mb="8px" fontSize="1.125rem" color="#FFFFFF">
             ¿Qué estudiaste en Coderhouse?
           </Text>
           <input
@@ -90,7 +90,7 @@ const Form = () => {
           />
         </div>
         <div className="containerInput">
-          <Text mb="8px" fontSize="18px" color="#FFFFFF">
+          <Text mb="8px" fontSize="1.125rem" color="#FFFFFF">
             ¿Qué herramientas manejas?
           </Text>
           <input
@@ -101,7 +101,7 @@ const Form = () => {
           />
         </div>
         <div className="containerInput">
-          <Text mb="8px" fontSize="18px" color="#FFFFFF">
+          <Text mb="8px" fontSize="1.125rem" color="#FFFFFF">
             ¿Quieres agregar otras habilidades?
           </Text>
           <input

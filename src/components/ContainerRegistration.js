@@ -21,8 +21,8 @@ const ContainerRegistration = () => {
         p={55}
         className="form-title"
       >
-        <Text fontSize="72px">SAVE THE DATE</Text>
-        <Text fontSize="25px">
+        <Text fontSize="4.5rem">SAVE THE DATE</Text>
+        <Text fontSize="1.6rem">
           DESDE EL MIERCOLES 27 AL JUEVES 28 DE JULIO
         </Text>
       </Flex>
