@@ -21,9 +21,7 @@ const CardEstosDias = ({ img, texto, position, left, right }) => {
                 w={{ base: "60%", md: "45%" }}
             >
                 <Stack
-                    bgImage={
-                        "url('https://images.unsplash.com/photo-1531538606174-0f90ff5dce83?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80')"
-                    }
+                    bgImage={img}
                     bgPosition={"center"}
                     bgSize={"cover"}
                     minH={{ base: "150px", md: "350px" }}
