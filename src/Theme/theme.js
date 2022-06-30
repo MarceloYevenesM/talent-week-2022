@@ -8,9 +8,6 @@ export default extendTheme(theme, {
                 height: "100%",
                 bgColor: "brand.100",
             },
-            body: {
-                overflowX: "hidden",
-            },
         },
     },
     shadows: {
@@ -19,6 +16,7 @@ export default extendTheme(theme, {
     },
     borders: {
         border: ".5rem solid",
+        borderMobile: ".35rem solid",
     },
     colors: {
         brand: {
@@ -33,6 +31,7 @@ export default extendTheme(theme, {
             fontFamily: "Gobold, sans-serif",
             fontSize: { base: "2.5rem", sm: "4rem" },
             fontStyle: "italic",
+            lineHeight: { base: "1.2", sm: "1.4" },
         },
         h2: {
             fontFamily: "Open Sans, sans-serif",

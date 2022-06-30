@@ -2,7 +2,7 @@ import { Link, Stack } from "@chakra-ui/react";
 
 const NavItem = ({ nombre, link }) => {
     return (
-        <Stack textStyle={"p"}>
+        <Stack fontWeight={"bold"} textStyle={"p"}>
             <Link href={link}>{nombre}</Link>
         </Stack>
     );
