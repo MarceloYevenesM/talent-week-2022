@@ -7,6 +7,11 @@ import NavItems from "./NavItems";
 import MenuToggle from "./MenuToggle";
 
 const NavBar = () => {
+    const close =
+        "https://firebasestorage.googleapis.com/v0/b/sm-portfolio-4c746.appspot.com/o/close_toggle_menu_svg.svg?alt=media&token=ee686e56-3484-48ed-89e5-1247cb7750bc";
+    const open =
+        "https://firebasestorage.googleapis.com/v0/b/sm-portfolio-4c746.appspot.com/o/toggle_menu_svg.svg?alt=media&token=4af2e451-3fbd-4766-bad9-f986e3e3ebd5";
+
     const [isOpen, setIsOpen] = useState(false);
     const [display, setDisplay] = useState(false);
     const onOpen = () => {
@@ -41,7 +46,7 @@ const NavBar = () => {
                     talentweek
                 </Text>
             </Stack>
-            <MenuToggle onOpen={onOpen} />
+            <MenuToggle icon={isOpen ? close : open} onOpen={onOpen} />
             <AnimatePresence>
                 <Stack
                     alignItems={"flex-start"}

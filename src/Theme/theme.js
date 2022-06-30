@@ -7,12 +7,17 @@ export default extendTheme(theme, {
             "html, body, #root": {
                 height: "100%",
                 bgColor: "brand.100",
+                margin: 0,
+                boxSizing: "border-box",
+                fontSize: "62.5%",
             },
         },
     },
     shadows: {
         desktop: "12px 12px 0px rgba(255, 255, 255, 1)",
         mobile: "6px 6px 0px rgba(255, 255, 255, 1)",
+        desktopN: "12px 12px 0px rgba(19, 19, 19, 1)",
+        mobileN: "6px 6px 0px rgba(19, 19, 19, 1)",
     },
     borders: {
         border: ".5rem solid",
@@ -43,6 +48,12 @@ export default extendTheme(theme, {
             fontFamily: "Open Sans, sans-serif",
             fontSize: "1.6rem",
             fontWeight: "semi-bold",
+        },
+        p2: {
+            fontFamily: "Open Sans, sans-serif",
+            fontSize: { base: "1.6rem", sm: "1.8rem" },
+            fontWeight: "black",
+            fontStyle: "italic",
         },
     },
     components: {
