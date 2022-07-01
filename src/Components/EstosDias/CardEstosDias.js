@@ -4,7 +4,6 @@ const CardEstosDias = ({ img, texto, position, left, right }) => {
     return (
         <GridItem
             alignItems={"center"}
-            bgColor={"red.500"}
             left={position}
             minH={{ base: "150px", md: "350px" }}
             position={"relative"}
@@ -33,7 +32,6 @@ const CardEstosDias = ({ img, texto, position, left, right }) => {
                 borderColor={"brand.100"}
                 borderWidth={{ base: "0.35rem", md: ".5rem" }}
                 boxShadow={{ base: "mobileN", md: "desktopN" }}
-                h={"50px"}
                 justifyContent={"center"}
                 left={left}
                 maxW={"500px"}
@@ -42,7 +40,14 @@ const CardEstosDias = ({ img, texto, position, left, right }) => {
                 top={"50%"}
                 zIndex={1}
             >
-                <Text color={"brand.100"} textStyle={"p2"}>
+                <Text
+                    color={"brand.100"}
+                    fontWeight={"black"}
+                    p={{ base: "2", md: "6" }}
+                    textAlign={"center"}
+                    textStyle={"p2"}
+                    textTransform={"uppercase"}
+                >
                     {texto}
                 </Text>
             </Stack>

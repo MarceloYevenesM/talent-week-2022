@@ -60,7 +60,7 @@ const Hero = () => {
                     borderColor={"brand.200"}
                     boxShadow={{ base: "mobile", md: "desktop" }}
                     justifyContent={{ base: "center", md: "flex-end" }}
-                    minH={{ base: "70vh", md: "50vh" }}
+                    minH={{ base: "60vh", md: "50vh" }}
                     position={"relative"}
                     top={{ base: "10px", md: "50px" }}
                     width={{ base: "80vw", sm: "40vw" }}
@@ -89,7 +89,9 @@ const Hero = () => {
 
             {/* TEXTO DOS */}
             <Stack
-                bottom={"0px"}
+                bottom={{ base: "30px", md: "0px" }}
+                height={"100%"}
+                justifyContent={"flex-end"}
                 left={{ base: "0px", md: "55%" }}
                 marginBottom={{ base: "0px", md: "10px" }}
                 p={{ base: "6", md: "10" }}
