@@ -1,0 +1,96 @@
+.itineraryContainer {
+  width: 100%;
+  height: 1528px;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.itineraryContainer .background {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.itineraryContainer .background .color {
+  width: 70%;
+  height: 100%;
+  background-color: #131313;
+}
+.itineraryContainer .background .img {
+  width: 30%;
+  height: 100%;
+  background-image: url("../assets/Imagen-agenda.png");
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+
+.card-itinerary {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  -webkit-box-shadow: 5px 5px 0px 1px #000000;
+  box-shadow: 5px 5px 0px 1px #000000;
+  border: 1px solid #131313;
+  background-color: #fff;
+}
+
+.card-title {
+  width: 198.4px;
+  height: 45px;
+  background-color: #e0ff00;
+  border: 2px solid #131313;
+  -webkit-box-shadow: 5px 5px 1px 1px #000000;
+  box-shadow: 5px 5px 1px 1px #000000;
+}
+
+.card-title .text {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.container-days{
+  position: relative;
+}
+
+.container-days-2{
+  position: relative;
+  top: 10px;
+}
+
+
+
+.containerDay {
+  -webkit-box-shadow: 5px 5px 0px 1px #000000;
+  box-shadow: 5px 5px 0px 1px #000000;
+  border: 1px solid #131313;
+  background-color: #FFF;
+
+  position: relative;
+}
+
+.containerDay .title{
+  position: absolute;
+  text-align: center;
+  top: -1.20rem;
+  left: -3rem;
+  width: 12.752rem;
+  height: 2.25rem;
+  background-color: #131313;
+  color: #FFF;
+  text-transform: uppercase;
+  border: 2px solid #FFF;
+}
+
+.containerDay .list{
+  list-style-position: inside;
+  margin: 1rem;
+ 
+}

@@ -6,7 +6,6 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; /* Permite usar rems 1 rem = 10px o 1px = 0.1rem */
 }
 
 body {
