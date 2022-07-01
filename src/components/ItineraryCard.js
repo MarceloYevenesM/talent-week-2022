@@ -6,14 +6,7 @@ import DayCard from "./DayCard";
 
 const ItineraryCard = () => {
   return (
-    <Flex
-      direction={{ base: "column" }}
-      className="card-itinerary"
-      width="70%"
-      height="87.75rem"
-      padding="5rem"
-      justify="space-between"
-    >
+    <div className="card-itinerary">
       <Flex direction={{ base: "column" }} justify="space-between" height="75%">
         <ActivityCard
           date="del 11 al 20 de julio"
@@ -44,8 +37,16 @@ const ItineraryCard = () => {
   y empresas de interés."
         />
       </Flex>
-      <Flex height="22%" justify="space-around" className="container-days">
-        <Flex direction="column" justify="space-between">
+
+      <div className="container-days">
+        <Flex
+          direction="column"
+          justify="space-between"
+          width="33.333%"
+          align="center"
+          gap="2rem"
+          className="container-days-1"
+        >
           <DayCard
             height={"5.875rem"}
             width={"12.75rem"}
@@ -64,6 +65,9 @@ const ItineraryCard = () => {
           direction="column"
           justify="space-between"
           className="container-days-2"
+          width="33.333%"
+          align="center"
+          gap="2rem"
         >
           <DayCard
             height={"12rem"}
@@ -78,7 +82,14 @@ const ItineraryCard = () => {
           />
         </Flex>
 
-        <Flex direction="column" justify="space-between">
+        <Flex
+          direction="column"
+          justify="space-between"
+          width="33.333%"
+          align="center"
+          gap="2rem"
+          className="container-days-3"
+        >
           <DayCard
             height={"6.875rem"}
             width={"12.75rem"}
@@ -92,8 +103,8 @@ const ItineraryCard = () => {
             title="viernes 12"
           />
         </Flex>
-      </Flex>
-    </Flex>
+      </div>
+    </div>
   );
 };
 

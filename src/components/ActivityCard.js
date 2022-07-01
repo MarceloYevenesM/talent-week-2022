@@ -4,10 +4,10 @@ import ItineraryCardTitle from "./ItineraryCardTitle";
 
 const ActivityCard = ({ date, title, content }) => {
   return (
-    <Flex direction="column" gap={4} width="70%">
+    <Flex direction="column" gap={4} width="80%">
       <ItineraryCardTitle title={date} />
-      <Text fontSize="1.875rem">{title}</Text>
-      <Text fontSize="1.25rem">{content}</Text>
+      <Text fontSize={{base: "1rem" , lg: "1.3rem" , xl:"1.875rem"}}>{title}</Text>
+      <Text fontSize={{base: "1.25rem"}}>{content}</Text>
     </Flex>
   );
 };
