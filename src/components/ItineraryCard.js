@@ -7,7 +7,7 @@ import DayCard from "./DayCard";
 const ItineraryCard = () => {
   return (
     <div className="card-itinerary">
-      <Flex direction={{ base: "column" }} justify="space-between" height="75%">
+      <Flex direction={{ base: "column" }} gap={3}>
         <ActivityCard
           date="del 11 al 20 de julio"
           title="INSCRIPCIÓN DE NUESTRA COMUNIDAD"
@@ -39,36 +39,25 @@ const ItineraryCard = () => {
       </Flex>
 
       <div className="container-days">
-        <Flex
-          direction="column"
-          justify="space-between"
-          width="33.333%"
-          align="center"
-          gap="2rem"
-          className="container-days-1"
-        >
+        <div className="container-day-1">
           <DayCard
             height={"5.875rem"}
             width={"12.75rem"}
             items={["Talent"]}
             title="lunes 08"
           />
+        </div>
+
+        <div className="container-day-4">
           <DayCard
             height={"7rem"}
             width={"12.75rem"}
             items={["IBM", "Gaia Desing", "Fly bondi"]}
             title="jueves 11"
           />
-        </Flex>
+        </div>
 
-        <Flex
-          direction="column"
-          justify="space-between"
-          className="container-days-2"
-          width="33.333%"
-          align="center"
-          gap="2rem"
-        >
+        <div className="container-day-2">
           <DayCard
             height={"12rem"}
             width={"12.625rem"}
@@ -80,29 +69,25 @@ const ItineraryCard = () => {
             ]}
             title="martes 09"
           />
-        </Flex>
+        </div>
 
-        <Flex
-          direction="column"
-          justify="space-between"
-          width="33.333%"
-          align="center"
-          gap="2rem"
-          className="container-days-3"
-        >
+        <div className="container-day-3">
           <DayCard
             height={"6.875rem"}
             width={"12.75rem"}
             items={["Buk, Xpectral", "Globant Argentina"]}
             title="miercoles 10"
           />
+        </div>
+
+        <div className="container-day-5">
           <DayCard
             height={"7rem"}
             width={"12.75rem"}
             items={["Bitso", "Kueski", "Kavak"]}
             title="viernes 12"
           />
-        </Flex>
+        </div>
       </div>
     </div>
   );
