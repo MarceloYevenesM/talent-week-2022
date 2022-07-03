@@ -1,4 +1,41 @@
 
+
+:root {
+  --color-black-coder: #131313;
+}
+
+
+html {
+  box-sizing: border-box;
+ 
+}
+
+body {
+  margin: 0;
+  /* TODO:cambiar la fuente de la letra */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+
+
+
+
+
+
+=======
+
 :root {
     --color-black-coder: #131313;
     --color-link: #F2F2F2;
@@ -100,6 +137,7 @@ footer .text{
 .networks label{
   color: var(--color-yellow);
 }
+
 
 
 
