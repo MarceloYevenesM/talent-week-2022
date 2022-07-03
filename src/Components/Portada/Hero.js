@@ -8,7 +8,7 @@ const Hero = () => {
             as={"parent"}
             direction={{ base: "column", md: "row" }}
             maxW={"100vw"}
-            minH={{ base: "115vh", md: "80vh" }}
+            minH={{ base: "100vh", md: "80vh" }}
             paddingBottom={16}
             paddingInline={{ base: "6", md: "24" }}
             paddingTop={16}
@@ -89,7 +89,7 @@ const Hero = () => {
 
             {/* TEXTO DOS */}
             <Stack
-                bottom={{ base: "30px", md: "0px" }}
+                bottom={{ base: "0px", md: "0px" }}
                 height={"100%"}
                 justifyContent={"flex-end"}
                 left={{ base: "0px", md: "55%" }}
@@ -115,7 +115,11 @@ const Hero = () => {
                         p={{ base: "6", md: "12" }}
                         spacing={12}
                     >
-                        <Icon as={BsExclamationTriangleFill} h={"80px"} w={"80px"} />
+                        <Icon
+                            as={BsExclamationTriangleFill}
+                            h={{ base: "50px", md: "80px" }}
+                            w={{ base: "50px", md: "80px" }}
+                        />
                         <Text textAlign={"justify"} textStyle={"p"}>
                             Si eres <strong>estudiante o graduado de coderhouse, </strong>podras
                             entrar en contacto con más de...
