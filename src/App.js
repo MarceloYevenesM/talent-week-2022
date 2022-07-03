@@ -1,13 +1,12 @@
-import React from "react";
-import { ChakraProvider, Stack, Text } from "@chakra-ui/react";
+import EstosDias from "./Containers/EstosDias";
+import Portada from "./Containers/Portada";
 
 const App = () => {
     return (
-        <ChakraProvider>
-            <Stack>
-                <Text>HOLA</Text>
-            </Stack>
-        </ChakraProvider>
+        <>
+            <Portada />
+            <EstosDias />
+        </>
     );
 };
 
