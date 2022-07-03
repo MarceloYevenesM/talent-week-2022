@@ -1,16 +1,16 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
-import { ChakraProvider } from "@chakra-ui/react";
+import EstosDias from "./Containers/EstosDias";
+import Portada from "./Containers/Portada";
 
-import theme from "./Theme/theme";
-import App from "./App";
+const App = () => {
+    return (
+        <>
+            <Portada />
+            <EstosDias />
+        </>
+    );
+};
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(
-    <React.StrictMode>
-        <ChakraProvider theme={theme}>
-            <App />
-        </ChakraProvider>
-    </React.StrictMode>,
-);
+
+
