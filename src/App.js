@@ -1,15 +1,19 @@
 import React from "react";
-import { ChakraProvider } from "@chakra-ui/react";
-import ContainerRegistration from "./components/ContainerRegistration";
+
+
+import EstosDias from "./Containers/EstosDias";
+import Portada from "./Containers/Portada";
+import Footer from "./Components/Footer";
 
 const App = () => {
-  return (
-    <ChakraProvider>
-      <div className="body">
-        <ContainerRegistration />
-      </div>
-    </ChakraProvider>
-  );
+    return (
+        <>
+            <Portada />
+            <EstosDias />
+             <ContainerRegistration />
+            <Footer />
+        </>
+    );
 };
 
 export default App;
