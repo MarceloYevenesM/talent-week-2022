@@ -6,7 +6,7 @@ import { Box, Flex, Text } from "@chakra-ui/react";
 
 const ContainerBusiness = () => {
   return (
-    <Box width="100%" height="30rem">
+    <Box width="100%" height="30rem" marginTop={"10%"}>
       <Flex flexDirection="column" justify="space-evenly" width="100%" height="100%">
         <Box>
             <Text textTransform="uppercase" marginInlineStart="5rem" fontSize="3.75rem">
