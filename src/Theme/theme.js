@@ -51,9 +51,14 @@ export default extendTheme(theme, {
         },
         p2: {
             fontFamily: "Open Sans, sans-serif",
-            fontSize: { base: "1rem", sm: "1.8rem" },
+            fontSize: { base: "1.2rem", sm: "1.6rem" },
             fontWeight: "black",
             fontStyle: "italic",
+        },
+        info: {
+            fontFamily: "Open Sans, sans-serif",
+            fontSize: "1.4rem",
+            fontWeight: "semi-bold",
         },
     },
     components: {

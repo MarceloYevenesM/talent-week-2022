@@ -1,82 +1,88 @@
-import { Box, Container, Image, Stack, Text } from "@chakra-ui/react";
+import { Container, Stack, Text } from "@chakra-ui/react";
 
-const CardSpeaker = ({ img, nombre, empresa, horarios }) => {
+const CardSpeaker = ({ img, nombre, empresa, horarios, puesto, size }) => {
     return (
         <Container
-            as={"contenedor"}
-            bgColor={"green.500"}
+            // bgColor={"green.500"}
             display={"flex"}
-            justifyContent={"center"}
-            maxH={"100%"}
+            justifyContent={"space-around"}
             maxW={"100%"}
-            padding={6}
+            minHeight={"250px"}
+            p={10}
             position={"relative"}
         >
+            {/* NOMBRE SPEAKER */}
+            <Stack
+                bgColor={"brand.100"}
+                borderColor={"brand.200"}
+                borderWidth={{ base: "0.1rem", md: ".3rem" }}
+                left={"0"}
+                p={1}
+                position={"absolute"}
+                top={"0"}
+                w={"65%"}
+                zIndex={"1"}
+            >
+                <Text textAlign={"center"} textStyle={"p2"} textTransform={"uppercase"}>
+                    {nombre}
+                </Text>
+            </Stack>
+
+            {/* IMAGEN SPEAKER */}
             <Stack
                 alignItems={"center"}
                 bgColor={"brand.200"}
                 borderColor={"brand.100"}
                 borderWidth={{ base: "0.35rem", md: ".5rem" }}
                 boxShadow={{ base: "mobileN", md: "desktopN" }}
-                height={{ base: "200px", md: "300px" }}
-                justifyContent={"center"}
-                left={{ base: "50%", md: "25%" }}
+                height={{ base: "150px", md: "250px" }}
+                minH={"100%"}
                 p={1}
-                width={{ base: "200px", md: "200px" }}
+                w={{ base: "80%", md: "65%" }}
             >
                 <Stack
-                    // bgImage={img}
+                    bgImage={img}
                     bgPosition={"center"}
                     bgSize={"cover"}
                     height={"100%"}
-                    position={"absolute"}
                     width={"100%"}
                 />
             </Stack>
 
+            {/* INFO */}
             <Stack
-                alignItems={"center"}
-                bgColor={"brand.100"}
-                borderColor={"brand.200"}
-                borderWidth={{ base: "0.2rem", md: ".5rem" }}
-                left={"0px"}
-                position={"absolute"}
-                top={"0px"}
-                width={"70%"}
-            >
-                <Text
-                    color={"brand.200"}
-                    fontWeight={"black"}
-                    p={2}
-                    textAlign={"center"}
-                    textStyle={"p2"}
-                    textTransform={"uppercase"}
-                >
-                    {nombre}
-                </Text>
-            </Stack>
-
-            <Stack
-                alignItems={"center"}
                 bgColor={"brand.200"}
                 borderColor={"brand.100"}
                 borderWidth={{ base: "0.2rem", md: ".5rem" }}
-                bottom={"-20px"}
+                bottom={{ base: "-100px", md: "-50px" }}
                 boxShadow={{ base: "mobileN", md: "desktopN" }}
-                p={{ base: "1", md: "2" }}
+                h={{ base: "65%", md: "45%" }}
+                justifyContent={"center"}
+                padding={2}
                 position={"absolute"}
-                right={"0px"}
-                width={{ base: "200px", md: "50%" }}
+                right={"0"}
+                w={"70%"}
             >
-                <Image h={{ base: "50px", md: "40px" }} src={empresa} w={"auto"} />
+                <Stack
+                    alignItems={"center"}
+                    bgImage={empresa}
+                    bgPosition={"center"}
+                    bgRepeat={"no-repeat"}
+                    bgSize={{ base: "80px", md: `${size}` }}
+                    height={"50%"}
+                    w={"auto"}
+                />
                 <Text
                     color={"brand.100"}
+                    fontStyle={"italic"}
                     fontWeight={"black"}
-                    p={2}
                     textAlign={"center"}
-                    textStyle={"p2"}
+                    textStyle={"info"}
                 >
                     {horarios}
+                </Text>
+                <Text color={"brand.100"} textAlign={"center"} textStyle={"info"}>
+                    {puesto}
                 </Text>
             </Stack>
         </Container>
