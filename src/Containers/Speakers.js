@@ -2,8 +2,6 @@ import { Container, Stack, Text, SimpleGrid } from "@chakra-ui/react";
 
 import CardDosSpeakers from "../Components/Speakers/CardDosSpeakers";
 import CardSpeaker from "../Components/Speakers/CardSpeaker";
-CardSpeaker;
-
 import DiaItem from "../Components/Speakers/DiaItem";
 
 const Speakers = () => {
