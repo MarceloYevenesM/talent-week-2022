@@ -36,7 +36,7 @@ const Speakers = () => {
                     </Stack>
                     <Stack marginTop={12} spacing={24}>
                         <DiaItem texto={"jueves 28 de julio"} />
-                        <SimpleGrid minChildWidth={"200px"} spacing={24}>
+                        <SimpleGrid bgColor={"blue.500"} minChildWidth={"200px"} spacing={24}>
                             <CardSpeaker
                                 empresa={
                                     "  https://api.typeform.com/responses/files/2d176a0214eaa58a7387cc0ee1de6c50b851a223ff7bb58084c7c97b8dfa9f8b/download.png"
