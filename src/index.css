@@ -1,12 +1,13 @@
 
 :root {
   --color-black-coder: #131313;
+  --color-link: #F2F2F2;
+  --color-yellow: #E0FF00;
 }
 
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; /* Permite usar rems 1 rem = 10px o 1px = 0.1rem */
 }
 
 body {
@@ -23,6 +24,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+footer a{
+  text-decoration: none;
+  color: var(--color-link);
+}
+
+footer .footer{
+  width: 100%;
+}
+
+footer .text{
+  color: white;
+}
+
+.logoCoderHouse{
+  position: relative;
+  left: -13px;
+}
+
+.networks label{
+  color: var(--color-yellow);
+}
+
 
 
 
