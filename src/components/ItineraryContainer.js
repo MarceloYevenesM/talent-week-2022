@@ -1,24 +1,19 @@
-import React from 'react'
+import React from "react";
+
 import "../styles/itinerary.css";
-import ItineraryCard from './ItineraryCard';
+import ItineraryCard from "./ItineraryCard";
 
 const ItineraryContainer = () => {
-  return (
-    <div className='itineraryContainer'>
-      <div className='background'>
-        <div className='color'>
-         
+    return (
+        <div className="itineraryContainer">
+            <div className="background">
+                <div className="color" />
+                <div className="img" />
+            </div>
+
+            <ItineraryCard />
         </div>
-        <div className='img'>
-        </div>
-      </div>
+    );
+};
 
-      <ItineraryCard />
-
-
-
-    </div>
-  )
-}
-
-export default ItineraryContainer
+export default ItineraryContainer;
