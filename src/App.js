@@ -12,14 +12,12 @@ const App = () => {
     return (
         <>
             <Portada />
-            <EstosDias />
             <ContainerRegistration />
+            <EstosDias />
             <ItineraryContainer />
-            <div>
-                <ApplyCompanies />
-                <ContainerBusiness />
-            </div>
-            <Footer />
+            {/* <ApplyCompanies /> */}
+            {/* <ContainerBusiness /> */}
+            {/* <Footer /> */}
         </>
     );
 };

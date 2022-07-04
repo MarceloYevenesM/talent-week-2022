@@ -55,6 +55,12 @@ export default extendTheme(theme, {
             fontWeight: "black",
             fontStyle: "italic",
         },
+        p3: {
+            fontFamily: "Open Sans, sans-serif",
+            fontSize: { base: "1.2rem", sm: "1.6rem" },
+            // fontWeight: "black",
+            color: "brand.200",
+        },
     },
     components: {
         Link: {

@@ -3,14 +3,13 @@
     overflow: hidden;
 }
 
-.form {
+/* .form {
     background-color: #131313;
     width: 916.6px;
     height: 1450px;
-    -webkit-box-shadow: 5px 5px 0px 1px #ffffff;
-    box-shadow: 5px 5px 0px 1px #ffffff;
+    box-shadow: 12px 12px 0px rgba(255, 255, 255, 1);
     border: 1px solid white;
-}
+} */
 
 .input {
     border: 1.5px solid #e0ff00;
@@ -24,6 +23,7 @@
 
 .input::placeholder {
     color: #808080;
+    font-size: 1.6rem;
 }
 
 .carrusel {
@@ -40,15 +40,15 @@
     }
 
     .containerInput {
-        width: 100%;
+        width: 80%;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        align-items: flex-start;
+        justify-content: flex-start;
     }
 
     .input {
-        width: 80%;
+        width: 100%;
     }
 }
 
@@ -68,7 +68,11 @@
     }
 
     .input {
-        width: 80%;
+        width: 100%;
         font-size: 15px;
+    }
+
+    .input::placeholder {
+        font-size: 1rem;
     }
 }
