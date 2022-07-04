@@ -19,7 +19,7 @@ const CardDosSpeakers = ({ img, imgDos, nombre, empresa, horarios, puesto, size 
                 p={1}
                 position={"absolute"}
                 top={"0"}
-                w={"65%"}
+                w={"100%"}
                 zIndex={"1"}
             >
                 <Text textAlign={"center"} textStyle={"p2"} textTransform={"uppercase"}>

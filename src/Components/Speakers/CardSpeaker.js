@@ -8,7 +8,7 @@ const CardSpeaker = ({ img, nombre, empresa, horarios, puesto, size }) => {
             justifyContent={"space-around"}
             maxW={"100%"}
             minHeight={"250px"}
-            p={10}
+            p={6}
             position={"relative"}
         >
             {/* NOMBRE SPEAKER */}
@@ -42,7 +42,7 @@ const CardSpeaker = ({ img, nombre, empresa, horarios, puesto, size }) => {
             >
                 <Stack
                     bgImage={img}
-                    bgPosition={"center"}
+                    bgPosition={"top"}
                     bgSize={"cover"}
                     height={"100%"}
                     width={"100%"}
