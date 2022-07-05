@@ -55,7 +55,13 @@ const ContainerBusiness = () => {
     };
 
     return (
-        <Stack alignItems="center" bgColor={"brand.200"} p={{ base: "6", md: "24" }} spacing={6}>
+        <Stack
+            alignItems="center"
+            bgColor={"brand.200"}
+            id={"empresas"}
+            p={{ base: "6", md: "24" }}
+            spacing={6}
+        >
             <Text color={"brand.100"} textAlign={"center"} textStyle={"h1"}>
                 empresas participantes que te están buscando:
             </Text>
