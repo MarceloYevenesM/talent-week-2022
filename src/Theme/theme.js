@@ -44,6 +44,12 @@ export default extendTheme(theme, {
             fontStyle: "italic",
             fontSize: "1.6rem",
         },
+        h3: {
+            fontFamily: "Open Sans, sans-serif",
+            fontWeight: "bold",
+            fontStyle: "italic",
+            fontSize: "2rem",
+        },
         p: {
             fontFamily: "Open Sans, sans-serif",
             fontSize: "1.6rem",
@@ -55,10 +61,10 @@ export default extendTheme(theme, {
             fontWeight: "black",
             fontStyle: "italic",
         },
-        info: {
+        p3: {
             fontFamily: "Open Sans, sans-serif",
-            fontSize: "1.4rem",
-            fontWeight: "semi-bold",
+            fontSize: { base: "1.2rem", sm: "1.6rem" },
+            color: "brand.200",
         },
     },
     components: {

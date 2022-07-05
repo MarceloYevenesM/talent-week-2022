@@ -1,0 +1,27 @@
+.card-business{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 5px 5px 0px 1px #000000;
+    box-shadow: 5px 5px 0px 1px #000000;
+    border: 3px solid #131313;
+    width: 15rem;
+    height: 15rem;
+}
+
+.bg-black{
+    background-color: #000000;
+}
+
+
+.card-business img{
+    object-fit: cover;
+    object-position: center;
+    height: auto;
+    width: 100%;
+}
+
+.imgBorder {
+    outline: 3px solid #131313;
+    border: 5px solid #FFF;
+}

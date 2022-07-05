@@ -23,7 +23,7 @@ const EstosDias = () => {
                     </Stack>
                     <Grid
                         gap={{ base: "24", md: "0" }}
-                        marginTop={["2rem", "4rem"]}
+                        marginBlock={24}
                         templateColumns={"repeat(1, auto)"}
                     >
                         <CardEstosDias
