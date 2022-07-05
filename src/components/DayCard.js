@@ -8,9 +8,9 @@ const DayCard = ({ height, width, items, title }) => {
             borderColor={"brand.100"}
             borderWidth={{ base: ".2rem", md: ".3rem" }}
             boxShadow={{ base: "mobileN", md: "desktopN" }}
-            height={"100%"}
+            height={"90%"}
             position={"relative"}
-            w={{ base: "90%", md: "50%" }}
+            w={{ base: "90%", md: "80%" }}
         >
             <Stack
                 bgColor={"brand.100"}
@@ -26,7 +26,7 @@ const DayCard = ({ height, width, items, title }) => {
                 </Text>
             </Stack>
             <Stack height="100%" justify="center" width={"100%"}>
-                <Stack className="list" p={2}>
+                <Stack className="list" p={6}>
                     {items.map((item, i) => (
                         <Text key={i} color={"brand.100"} fontWeight={"bold"} textStyle={"p"}>
                             {item}

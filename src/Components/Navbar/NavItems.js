@@ -2,10 +2,10 @@ import NavItem from "./NavItem";
 const NavItems = () => {
     return (
         <>
-            <NavItem link="/" nombre="Inscripción" />
-            <NavItem link="/" nombre="Agenda" />
-            <NavItem link="/" nombre="Date a conocer" />
-            <NavItem link="/" nombre="Empresas" />
+            <NavItem link="#formulario" nombre="Inscripción" />
+            <NavItem link="#agenda" nombre="Agenda" />
+            <NavItem link="#conocer" nombre="Date a conocer" />
+            <NavItem link="#empresas" nombre="Empresas" />
         </>
     );
 };

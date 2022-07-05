@@ -1,4 +1,4 @@
-import { Button, Icon, Image, Stack, Text, Container } from "@chakra-ui/react";
+import { Button, Icon, Image, Stack, Text, Container, Link } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { BsExclamationTriangleFill } from "react-icons/bs";
 
@@ -80,9 +80,15 @@ const Hero = () => {
                             ¡Súmate a nuestro primer evento sobre talento digital y empleabilidad
                             100% online para la comunidad de Coderhouse en Latinoamérica!
                         </Text>
-                        <Button size={"xl"} variant={"coder-house"} w={{ base: "90%", md: "40%" }}>
-                            Inscribite acá
-                        </Button>
+                        <Link href="#formulario">
+                            <Button
+                                size={"xl"}
+                                variant={"coder-house"}
+                                w={{ base: "90%", md: "40%" }}
+                            >
+                                Inscribite acá
+                            </Button>
+                        </Link>
                     </Stack>
                 </Stack>
             </Stack>

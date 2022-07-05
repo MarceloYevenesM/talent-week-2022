@@ -7,6 +7,7 @@ import ItineraryCard from "./ItineraryCard";
 const ItineraryContainer = () => {
     return (
         <Stack
+            id={"agenda"}
             justifyContent={"center"}
             maxW={"100%"}
             p={{ base: "6", md: "24" }}

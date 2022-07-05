@@ -10,6 +10,7 @@ export default extendTheme(theme, {
                 margin: 0,
                 boxSizing: "border-box",
                 fontSize: "62.5%",
+                scrollBehavior: "smooth",
             },
         },
     },
@@ -65,6 +66,23 @@ export default extendTheme(theme, {
             fontFamily: "Open Sans, sans-serif",
             fontSize: { base: "1.2rem", sm: "1.6rem" },
             color: "brand.200",
+        },
+        info: {
+            fontFamily: "Open Sans, sans-serif",
+            fontSize: "1.4rem",
+            fontWeight: "semi-bold",
+        },
+        banner: {
+            fontFamily: "Gobold, sans-serif",
+            fontSize: "3rem",
+            fontStyle: "italic",
+            fontWeight: "black",
+        },
+        bannerDos: {
+            fontFamily: "Gobold Hollow , sans-serif",
+            fontSize: "3rem",
+            fontStyle: "italic",
+            fontWeight: "black",
         },
     },
     components: {

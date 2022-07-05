@@ -18,7 +18,7 @@ const Speakers = () => {
                 height="100%"
                 {...gridImageProps}
             >
-                <Container maxW="100%" padding={{ base: "6", md: "24" }}>
+                <Container marginBottom={24} maxW="100%" padding={{ base: "6", md: "24" }}>
                     <Stack
                         bgColor={"brand.200"}
                         borderColor={"brand.100"}
@@ -163,7 +163,7 @@ const Speakers = () => {
                             />
                             <CardSpeaker
                                 empresa={
-                                    "https://api.typeform.com/responses/files/0b6e93583ae509f5e0c9b51c8e0a7476b4379d3f3c4bad5f22fe0d8d821532d7/elementos_KAvak_Mesa_de_trabajo_1_copia_4__1_.pngg"
+                                    "https://api.typeform.com/responses/files/0b6e93583ae509f5e0c9b51c8e0a7476b4379d3f3c4bad5f22fe0d8d821532d7/elementos_KAvak_Mesa_de_trabajo_1_copia_4__1_.png"
                                 }
                                 horarios={"15.00 a 15.30 (Arg.)-13.00 a 13.30 (Méx.)"}
                                 img={

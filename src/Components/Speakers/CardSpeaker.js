@@ -3,7 +3,6 @@ import { Container, Stack, Text } from "@chakra-ui/react";
 const CardSpeaker = ({ img, nombre, empresa, horarios, puesto, size }) => {
     return (
         <Container
-            // bgColor={"green.500"}
             display={"flex"}
             justifyContent={"space-around"}
             maxW={"100%"}
@@ -35,10 +34,10 @@ const CardSpeaker = ({ img, nombre, empresa, horarios, puesto, size }) => {
                 borderColor={"brand.100"}
                 borderWidth={{ base: "0.35rem", md: ".5rem" }}
                 boxShadow={{ base: "mobileN", md: "desktopN" }}
-                height={{ base: "150px", md: "250px" }}
+                height={{ base: "150px", md: "150px" }}
                 minH={"100%"}
                 p={1}
-                w={{ base: "80%", md: "65%" }}
+                w={{ base: "80%", md: "60%" }}
             >
                 <Stack
                     bgImage={img}
