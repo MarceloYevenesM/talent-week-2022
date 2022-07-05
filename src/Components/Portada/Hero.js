@@ -56,8 +56,8 @@ const Hero = () => {
             <Stack alignItems={{ base: "flex-end", md: "center" }} width={"100%"}>
                 <Stack
                     bgColor={"brand.100"}
-                    border={{ base: "borderMobile", md: "border" }}
                     borderColor={"brand.200"}
+                    borderWidth={{ base: ".35rem", md: ".5rem" }}
                     boxShadow={{ base: "mobile", md: "desktop" }}
                     justifyContent={{ base: "center", md: "flex-end" }}
                     minH={{ base: "60vh", md: "50vh" }}
@@ -102,8 +102,8 @@ const Hero = () => {
                     animate={{ translateX: "0px" }}
                     as={motion.div}
                     bgColor={"brand.100"}
-                    border={{ base: "borderMobile", md: "border" }}
                     borderColor={"brand.200"}
+                    borderWidth={{ base: ".35rem", md: ".5rem" }}
                     boxShadow={{ base: "mobile", md: "desktop" }}
                     initial={{ translateX: "1000px" }}
                     transition={{ duration: 1 }}

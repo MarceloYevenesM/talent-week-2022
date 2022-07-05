@@ -1,92 +1,53 @@
 import React from "react";
-import { Flex, Grid, GridItem, Image, Text } from "@chakra-ui/react";
-
-import logoTw from "../assets/Logo-TW.png";
-import textTW from "../assets/talent-week.png";
-import logoCoder from "../assets/logo-coder.png";
+import { Stack, Text } from "@chakra-ui/react";
 
 import SocialNetworks from "./SocialNetworks";
+import NavItems from "./Navbar/NavItems";
+import NavLogo from "./Navbar/NavLogo";
+import NavItem from "./Navbar/NavItem";
 
 const Footer = () => {
     return (
-        <footer>
-            <Flex
-                alignItems="center"
-                bgColor="#131313"
-                h={{ base: "700px", md: "400px", lg: "320px" }}
-                justify="space-around"
-                w="100%"
-                wrap="wrap"
+        <Stack alignItems={"center"} paddingBottom={10}>
+            <Stack
+                alignItems={{ base: "flex-start", md: "center" }}
+                bgColor={"brand.100"}
+                direction={{ base: "column", md: "row" }}
+                justifyContent={{ base: "center", md: "space-between" }}
+                p={{ base: "6", md: "24" }}
+                spacing={{ base: "24", md: "6" }}
+                w={"100%"}
             >
-                <div className="footer">
-                    <Flex alignItems="center" justify="space-around" w="100%" wrap="wrap">
-                        <Grid
-                            gap={1}
-                            h="224.2px"
-                            templateColumns="25% 1fr"
-                            templateRows="25% 1fr"
-                            w="233px"
-                        >
-                            <GridItem colSpan={1} rowSpan={1}>
-                                <Flex alignItems="center" h="100%" justify="center" w="100%">
-                                    <Image alt="Logo TW" h="46px" src={logoTw} w="48px" />
-                                </Flex>
-                            </GridItem>
+                <Stack spacing={12}>
+                    <Stack alignItems={"center"} direction={"row"} spacing={6}>
+                        <NavLogo />
+                        <Text textStyle={"h1"}>talentweek</Text>
+                    </Stack>
+                    <Stack>
+                        <NavItems />
+                    </Stack>
+                </Stack>
+                <Stack spacing={12}>
+                    <Stack direction={"row"} spacing={6} w={"100%"}>
+                        <Text textStyle={"h1"}>coderhouse</Text>
+                    </Stack>
+                    <Stack>
+                        <NavItem link="/" nombre="Nosotros" />
+                        <NavItem link="/" nombre="Comunidad" />
+                        <NavItem link="/" nombre="Contacto" />
+                    </Stack>
+                </Stack>
 
-                            <GridItem colSpan={1} rowSpan={1}>
-                                <Flex alignItems="center" h="100%" justify="center" w="100%">
-                                    <Image alt="Text TW" h="26px" src={textTW} w="156px" />
-                                </Flex>
-                            </GridItem>
-
-                            <GridItem colStart={2} rowStart={2}>
-                                <Grid h="100%" w="100%">
-                                    <a href="/#">Inscripcion</a>
-                                    <a href="/#">Agenda</a>
-                                    <a href="/#">Date a conocer</a>
-                                    <a href="/#">Empresas</a>
-                                </Grid>
-                            </GridItem>
-                        </Grid>
-
-                        <Grid
-                            gap={1}
-                            h="224.2px"
-                            templateColumns="1fr"
-                            templateRows="25% 1fr"
-                            w="233px"
-                        >
-                            <GridItem colSpan={1} rowSpan={1}>
-                                <Flex alignItems="center" h="100%" justify="center" w="100%">
-                                    <Image
-                                        alt="Logo CoderHouse"
-                                        className="logoCoderHouse"
-                                        h="42px"
-                                        src={logoCoder}
-                                        w="227px"
-                                    />
-                                </Flex>
-                            </GridItem>
-
-                            <GridItem colStart={1} rowStart={2}>
-                                <Grid h="100%" templateRows="1fr 1fr 1fr 1fr" w="100%">
-                                    <a href="/#">
-                                        <Text textStyle={"p"}> Nosotros</Text>
-                                    </a>
-                                    <a href="/#">Comunidad</a>
-                                    <a href="/#">Contacto</a>
-                                </Grid>
-                            </GridItem>
-                        </Grid>
-
-                        <SocialNetworks />
-                    </Flex>
-                </div>
-                <div className="text">
-                    <label>© Copyright 2021 - Todos los derechos reservados</label>
-                </div>
-            </Flex>
-        </footer>
+                <Stack w={{ base: "100%", md: "20%" }}>
+                    <SocialNetworks />
+                </Stack>
+            </Stack>
+            <div className="text">
+                <Text p={2} textAlign={"center"} textStyle={"p"}>
+                    © Copyright 2021 - Todos los derechos reservados
+                </Text>
+            </div>
+        </Stack>
     );
 };
 
