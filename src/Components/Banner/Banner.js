@@ -16,7 +16,7 @@ const Banner = ({ bgColor, textStyle, span, emoji, textColor }) => {
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 3,
                     infinite: true,
                     dots: false,
                     centerMode: true,
@@ -26,7 +26,7 @@ const Banner = ({ bgColor, textStyle, span, emoji, textColor }) => {
             {
                 breakpoint: 600,
                 settings: {
-                    slidesToShow: 5,
+                    slidesToShow: 4,
                     centerMode: true,
                     centerPadding: "0px",
                     dots: false,
