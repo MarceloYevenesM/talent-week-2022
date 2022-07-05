@@ -1,4 +1,4 @@
-import { Box, Button, Stack, Grid, GridItem, Image, Text, Container } from "@chakra-ui/react";
+import { Button, Stack, Text } from "@chakra-ui/react";
 import React from "react";
 
 const ApplyCompanies = () => {
@@ -10,7 +10,7 @@ const ApplyCompanies = () => {
             position={"relative"}
         >
             <Stack bgColor={"brand.100"} h={"100%"} width="100%">
-                <Stack height={{ base: "500px", md: "300px" }} position={"relative"}>
+                <Stack height={{ base: "450px", md: "300px" }} position={"relative"}>
                     <Stack
                         bgImage={
                             "https://firebasestorage.googleapis.com/v0/b/sm-portfolio-4c746.appspot.com/o/dateImagen.png?alt=media&token=84b5b666-3a38-473e-beb2-e5c75c1bbb86"
