@@ -15,9 +15,9 @@ const App = () => {
             <ContainerRegistration />
             <EstosDias />
             <ItineraryContainer />
-            {/* <ApplyCompanies /> */}
-            {/* <ContainerBusiness /> */}
-            {/* <Footer /> */}
+            {/* <ApplyCompanies />
+            <ContainerBusiness />
+            <Footer /> */}
         </>
     );
 };

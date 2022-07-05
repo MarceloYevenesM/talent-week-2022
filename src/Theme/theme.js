@@ -44,6 +44,12 @@ export default extendTheme(theme, {
             fontStyle: "italic",
             fontSize: "1.6rem",
         },
+        h3: { 
+            fontFamily: "Open Sans, sans-serif",
+            fontWeight: "bold",
+            fontStyle: "italic",
+            fontSize: "2rem",
+        },
         p: {
             fontFamily: "Open Sans, sans-serif",
             fontSize: "1.6rem",

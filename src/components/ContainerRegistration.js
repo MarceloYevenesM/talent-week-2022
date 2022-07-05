@@ -7,7 +7,7 @@ import "../styles/form.css";
 const ContainerRegistration = () => {
     return (
         <Stack bgColor={"brand.200"} justifyContent={"center"} minW={"100%"} position={"relative"}>
-            <Flex height={"850px"} position={"absolute"} right={"0px"} top={"0px"} w={"40%"}>
+            <Stack height={"850px"} position={"absolute"} right={"0px"} top={"0px"} w={"40%"}>
                 <Image
                     boxSize={"100%"}
                     objectFit={"cover"}
@@ -15,7 +15,7 @@ const ContainerRegistration = () => {
                         "https://firebasestorage.googleapis.com/v0/b/sm-portfolio-4c746.appspot.com/o/imgInscripcion.png?alt=media&token=05c67ecc-153d-460d-a0d3-daeb72e46716"
                     }
                 />
-            </Flex>
+            </Stack>
             <Stack p={{ base: "6", md: "24" }}>
                 <Text color={"brand.100"} textStyle={"h1"}>
                     save the date

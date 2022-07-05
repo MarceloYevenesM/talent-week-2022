@@ -1,4 +1,4 @@
-import { Flex } from "@chakra-ui/react";
+import { Flex, Stack } from "@chakra-ui/react";
 import React from "react";
 
 import ActivityCard from "./ActivityCard";
@@ -6,12 +6,21 @@ import DayCard from "./DayCard";
 
 const ItineraryCard = () => {
     return (
-        <div className="card-itinerary">
-            <Flex direction={{ base: "column" }} gap={3}>
+        <Stack
+            bgColor={"brand.200"}
+            borderColor={"brand.100"}
+            borderWidth={{ base: ".25rem", md: ".5rem" }}
+            boxShadow={{ base: "mobileN", md: "desktopN" }}
+            justifyContent={"space-between"}
+            p={12}
+            spacing={12}
+            w={{ base: "100%", md: "70%" }}
+        >
+            <Stack spacing={12}>
                 <ActivityCard
                     content="Se realizará a través de un formulario en el que se pedirán datos de
-  contacto, CV, LinkedIn, portfolio, manejo de tecnologías y herramientas,
-  y empresas de interés."
+                    contacto, CV, LinkedIn, portfolio, manejo de tecnologías y herramientas,
+                    y empresas de interés."
                     date="del 11 al 20 de julio"
                     title="INSCRIPCIÓN DE NUESTRA COMUNIDAD"
                 />
@@ -31,60 +40,48 @@ const ItineraryCard = () => {
 
                 <ActivityCard
                     content="Se realizará a través de un formulario en el que se pedirán datos de
-  contacto, CV, LinkedIn, portfolio, manejo de tecnologías y herramientas,
-  y empresas de interés."
+                    contacto, CV, LinkedIn, portfolio, manejo de tecnologías y herramientas,
+                y empresas de interés."
                     date="del 8 al 12 de agosto"
                     title="INSCRIPCIÓN DE NUESTRA COMUNIDAD"
                 />
-            </Flex>
+            </Stack>
 
-            <div className="container-days">
-                <div className="container-day-1">
-                    <DayCard
-                        height={"5.875rem"}
-                        items={["Talent"]}
-                        title="lunes 08"
-                        width={"12.75rem"}
-                    />
-                </div>
+            <Stack spacing={6}>
+                <div className="container-days">
+                    <div className="container-day-1">
+                        <DayCard items={["Talent"]} title="lunes 08" />
+                    </div>
 
-                <div className="container-day-4">
-                    <DayCard
-                        height={"7rem"}
-                        items={["IBM", "Gaia Desing", "Fly bondi"]}
-                        title="jueves 11"
-                        width={"12.75rem"}
-                    />
-                </div>
+                    <div className="container-day-4">
+                        <DayCard items={["IBM", "Gaia Desing", "Fly bondi"]} title="jueves 11" />
+                    </div>
 
-                <div className="container-day-2">
-                    <DayCard
-                        height={"12rem"}
-                        items={["Ualá", "Globan México", "Cervecería y Maltería Quilmes", "Casai"]}
-                        title="martes 09"
-                        width={"12.625rem"}
-                    />
-                </div>
+                    <div className="container-day-2">
+                        <DayCard
+                            items={[
+                                "Ualá",
+                                "Globant México",
+                                "Cervecería y Maltería Quilmes",
+                                "Casai",
+                            ]}
+                            title="martes 09"
+                        />
+                    </div>
 
-                <div className="container-day-3">
-                    <DayCard
-                        height={"6.875rem"}
-                        items={["Buk, Xpectral", "Globant Argentina"]}
-                        title="miercoles 10"
-                        width={"12.75rem"}
-                    />
-                </div>
+                    <div className="container-day-3">
+                        <DayCard
+                            items={["Buk", "Xpectral", "Globant Argentina"]}
+                            title="miercoles 10"
+                        />
+                    </div>
 
-                <div className="container-day-5">
-                    <DayCard
-                        height={"7rem"}
-                        items={["Bitso", "Kueski", "Kavak"]}
-                        title="viernes 12"
-                        width={"12.75rem"}
-                    />
+                    <div className="container-day-5">
+                        <DayCard items={["Bitso", "Kueski", "Kavak"]} title="viernes 12" />
+                    </div>
                 </div>
-            </div>
-        </div>
+            </Stack>
+        </Stack>
     );
 };
 

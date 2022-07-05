@@ -25,33 +25,15 @@
     object-fit: cover;
 }
 
-.card-itinerary {
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    height: 87.75rem;
-    padding: 5rem;
-    gap: 2.5rem;
-    justify-content: "space-between";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    -webkit-box-shadow: 5px 5px 0px 1px #000000;
-    box-shadow: 5px 5px 0px 1px #000000;
-    border: 1px solid #131313;
-    background-color: #fff;
-}
+
 
 .card-title {
     width: 198.4px;
     height: 45px;
     background-color: #e0ff00;
     border: 2px solid #131313;
-    -webkit-box-shadow: 5px 5px 1px 1px #000000;
-    box-shadow: 5px 5px 1px 1px #000000;
+    -webkit-box-shadow: 5px 5px 1px 0px #000000;
+    box-shadow: 5px 5px 0px 0px #000000;
 }
 
 .card-title .text {
@@ -69,6 +51,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     width: "100%";
+    gap: 4rem;
 }
 
 .container-days .container-day-1 {
@@ -124,8 +107,7 @@
     text-align: center;
     top: -1.2rem;
     left: -3rem;
-    width: 12.752rem;
-    height: 2.25rem;
+    width: 100%;
     background-color: #131313;
     color: #fff;
     text-transform: uppercase;
@@ -153,7 +135,7 @@
 @media (max-width: 1054px) {
     .card-itinerary {
         height: 90%;
-        width: 85%;
+        width: 100%;
     }
 
     .container-days {
@@ -194,7 +176,6 @@
 
 @media (max-width: 731px) {
     .container-days {
-        height: 40%;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(5, 1fr);
         gap: 4rem;
@@ -224,10 +205,6 @@
         grid-column: 1;
         grid-row: 5;
     }
-
-    .itineraryContainer {
-        height: 140rem;
-    }
 }
 
 @media (max-width: 668px) {
@@ -246,13 +223,13 @@
     }
 }
 
-@media (max-width: 438px) {
+/* @media (max-width: 438px) {
     .itineraryContainer {
         height: 175rem;
     }
-}
+} */
 
-@media (max-width: 400px) {
+/* @media (max-width: 400px) {
     .itineraryContainer {
         height: 215rem;
     }
@@ -260,4 +237,4 @@
     .container-days {
         gap: 0;
     }
-}
+} */
