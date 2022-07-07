@@ -3,10 +3,17 @@ import { Box, Flex, Image, Stack, Text } from "@chakra-ui/react";
 
 import Form from "./Form";
 import "../styles/form.css";
+import Banner from "./Banner/Banner";
 
 const ContainerRegistration = () => {
     return (
-        <Stack bgColor={"brand.200"} justifyContent={"center"} minW={"100%"} position={"relative"}>
+        <Stack
+            bgColor={"brand.200"}
+            id={"formulario"}
+            justifyContent={"center"}
+            minW={"100%"}
+            position={"relative"}
+        >
             <Stack height={"850px"} position={"absolute"} right={"0px"} top={"0px"} w={"40%"}>
                 <Image
                     boxSize={"100%"}
@@ -35,6 +42,7 @@ const ContainerRegistration = () => {
                 right={"0px"}
                 w={"100%"}
             />
+            <Banner emoji={"💥"} textColor={"brand.300"} textStyle={"bannerDos"} />
         </Stack>
     );
 };

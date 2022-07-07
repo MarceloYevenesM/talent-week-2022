@@ -1,4 +1,4 @@
-import { Box, GridItem, Image, Stack, Text } from "@chakra-ui/react";
+import { GridItem, Stack, Text } from "@chakra-ui/react";
 
 const CardEstosDias = ({ img, texto, position, left, right }) => {
     return (

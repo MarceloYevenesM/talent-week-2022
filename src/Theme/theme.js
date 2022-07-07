@@ -10,6 +10,7 @@ export default extendTheme(theme, {
                 margin: 0,
                 boxSizing: "border-box",
                 fontSize: "62.5%",
+                scrollBehavior: "smooth",
             },
         },
     },
@@ -44,7 +45,7 @@ export default extendTheme(theme, {
             fontStyle: "italic",
             fontSize: "1.6rem",
         },
-        h3: { 
+        h3: {
             fontFamily: "Open Sans, sans-serif",
             fontWeight: "bold",
             fontStyle: "italic",
@@ -57,15 +58,31 @@ export default extendTheme(theme, {
         },
         p2: {
             fontFamily: "Open Sans, sans-serif",
-            fontSize: { base: "1rem", sm: "1.8rem" },
+            fontSize: { base: "1.2rem", sm: "1.6rem" },
             fontWeight: "black",
             fontStyle: "italic",
         },
         p3: {
             fontFamily: "Open Sans, sans-serif",
             fontSize: { base: "1.2rem", sm: "1.6rem" },
-            // fontWeight: "black",
             color: "brand.200",
+        },
+        info: {
+            fontFamily: "Open Sans, sans-serif",
+            fontSize: "1.4rem",
+            fontWeight: "semi-bold",
+        },
+        banner: {
+            fontFamily: "Gobold, sans-serif",
+            fontSize: "3rem",
+            fontStyle: "italic",
+            fontWeight: "black",
+        },
+        bannerDos: {
+            fontFamily: "Gobold Hollow , sans-serif",
+            fontSize: "3rem",
+            fontStyle: "italic",
+            fontWeight: "black",
         },
     },
     components: {

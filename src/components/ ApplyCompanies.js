@@ -1,10 +1,11 @@
-import { Button, Stack, Text } from "@chakra-ui/react";
+import { Button, Stack, Text, Link } from "@chakra-ui/react";
 import React from "react";
 
 const ApplyCompanies = () => {
     return (
         <Stack
             bgColor={"brand.200"}
+            id={"conocer"}
             maxW={"100%"}
             minH={{ base: "100%", md: "90%" }}
             position={"relative"}
@@ -35,9 +36,15 @@ const ApplyCompanies = () => {
                             que puedan tenerte en cuenta para oportunidades laborales actuales y
                             futuras.
                         </Text>
-                        <Button size={"xl"} variant={"coder-house"} w={{ base: "90%", md: "40%" }}>
-                            Aplicar
-                        </Button>
+                        <Link href="https://coderhouse.typeform.com/to/tl6lJDae" target={"_blank"}>
+                            <Button
+                                size={"xl"}
+                                variant={"coder-house"}
+                                w={{ base: "90%", md: "40%" }}
+                            >
+                                Aplicar
+                            </Button>
+                        </Link>
                     </Stack>
                     <Stack
                         bgColor={"red.500"}

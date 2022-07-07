@@ -14,7 +14,12 @@ const Portada = () => {
         <Stack bgSize={"70px 70px, 70px 70px"} {...gridImageProps}>
             <NavBar />
             <Hero />
-            <Banner />
+            <Banner
+                bgColor={"brand.300"}
+                emoji={"💥"}
+                textColor={"brand.100"}
+                textStyle={"banner"}
+            />
         </Stack>
     );
 };

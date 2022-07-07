@@ -1,4 +1,4 @@
-import { Button, Icon, Image, Stack, Text, Container } from "@chakra-ui/react";
+import { Button, Icon, Image, Stack, Text, Container, Link } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { BsExclamationTriangleFill } from "react-icons/bs";
 
@@ -8,7 +8,7 @@ const Hero = () => {
             as={"parent"}
             direction={{ base: "column", md: "row" }}
             maxW={"100vw"}
-            minH={{ base: "115vh", md: "80vh" }}
+            minH={{ base: "100vh", md: "80vh" }}
             paddingBottom={16}
             paddingInline={{ base: "6", md: "24" }}
             paddingTop={16}
@@ -80,16 +80,22 @@ const Hero = () => {
                             ¡Súmate a nuestro primer evento sobre talento digital y empleabilidad
                             100% online para la comunidad de Coderhouse en Latinoamérica!
                         </Text>
-                        <Button size={"xl"} variant={"coder-house"} w={{ base: "90%", md: "40%" }}>
-                            Inscribite acá
-                        </Button>
+                        <Link href="#formulario">
+                            <Button
+                                size={"xl"}
+                                variant={"coder-house"}
+                                w={{ base: "90%", md: "40%" }}
+                            >
+                                Inscribite acá
+                            </Button>
+                        </Link>
                     </Stack>
                 </Stack>
             </Stack>
 
             {/* TEXTO DOS */}
             <Stack
-                bottom={{ base: "30px", md: "0px" }}
+                bottom={{ base: "0px", md: "0px" }}
                 height={"100%"}
                 justifyContent={"flex-end"}
                 left={{ base: "0px", md: "55%" }}
@@ -115,7 +121,11 @@ const Hero = () => {
                         p={{ base: "6", md: "12" }}
                         spacing={12}
                     >
-                        <Icon as={BsExclamationTriangleFill} h={"80px"} w={"80px"} />
+                        <Icon
+                            as={BsExclamationTriangleFill}
+                            h={{ base: "50px", md: "80px" }}
+                            w={{ base: "50px", md: "80px" }}
+                        />
                         <Text textAlign={"justify"} textStyle={"p"}>
                             Si eres <strong>estudiante o graduado de coderhouse, </strong>podras
                             entrar en contacto con más de...

@@ -1,4 +1,4 @@
-import { Stack, Text, Grid, GridItem, Container, Image } from "@chakra-ui/react";
+import { Stack, Text, Grid, Container } from "@chakra-ui/react";
 
 import CardEstosDias from "../Components/EstosDias/CardEstosDias";
 const EstosDias = () => {
