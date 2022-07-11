@@ -14,6 +14,7 @@ export default extendTheme(theme, {
             },
         },
     },
+
     shadows: {
         desktop: "12px 12px 0px rgba(255, 255, 255, 1)",
         mobile: "6px 6px 0px rgba(255, 255, 255, 1)",
@@ -34,10 +35,20 @@ export default extendTheme(theme, {
 
     textStyles: {
         h1: {
-            fontFamily: "Gobold, sans-serif",
+            fontFamily: "Gobold-Bold-Italic",
             fontSize: { base: "2.5rem", sm: "4rem" },
             fontStyle: "italic",
             lineHeight: { base: "1.2", sm: "1.4" },
+        },
+        banner: {
+            fontFamily: "Gobold-Bold-Italic",
+            fontSize: "3rem",
+            fontStyle: "italic",
+        },
+        bannerDos: {
+            fontFamily: "Gobold-Bold-Italic",
+            fontSize: "3rem",
+            fontStyle: "italic",
         },
         h2: {
             fontFamily: "Open Sans, sans-serif",
@@ -72,19 +83,8 @@ export default extendTheme(theme, {
             fontSize: "1.4rem",
             fontWeight: "semi-bold",
         },
-        banner: {
-            fontFamily: "Gobold, sans-serif",
-            fontSize: "3rem",
-            fontStyle: "italic",
-            fontWeight: "black",
-        },
-        bannerDos: {
-            fontFamily: "Gobold Hollow , sans-serif",
-            fontSize: "3rem",
-            fontStyle: "italic",
-            fontWeight: "black",
-        },
     },
+
     components: {
         Link: {
             baseStyle: {
