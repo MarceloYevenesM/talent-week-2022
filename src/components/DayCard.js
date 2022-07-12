@@ -1,7 +1,7 @@
 import React from "react";
-import { Flex, Stack, Text } from "@chakra-ui/react";
+import { Stack, Text } from "@chakra-ui/react";
 
-const DayCard = ({ height, width, items, title }) => {
+const DayCard = ({ items, title }) => {
     return (
         <Stack
             bgColor={"brand.200"}
