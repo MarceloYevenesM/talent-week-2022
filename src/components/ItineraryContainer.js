@@ -1,4 +1,4 @@
-import { Image, Stack, Text } from "@chakra-ui/react";
+import { Stack, Text } from "@chakra-ui/react";
 import React from "react";
 
 import "../styles/itinerary.css";
