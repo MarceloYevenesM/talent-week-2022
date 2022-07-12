@@ -22,7 +22,12 @@ const CardSpeaker = ({ img, nombre, empresa, horarios, puesto, size }) => {
                 w={"65%"}
                 zIndex={"1"}
             >
-                <Text textAlign={"center"} textStyle={"p2"} textTransform={"uppercase"}>
+                <Text
+                    color={"brand.200"}
+                    textAlign={"center"}
+                    textStyle={"p2"}
+                    textTransform={"uppercase"}
+                >
                     {nombre}
                 </Text>
             </Stack>
