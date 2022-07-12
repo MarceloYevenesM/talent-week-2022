@@ -21,7 +21,9 @@ const Footer = () => {
                 <Stack spacing={12}>
                     <Stack alignItems={"center"} direction={"row"} spacing={6}>
                         <NavLogo />
-                        <Text textStyle={"h1"}>talentweek</Text>
+                        <Text color={"brand.200"} textStyle={"h1"}>
+                            talentweek
+                        </Text>
                     </Stack>
                     <Stack>
                         <NavItems />
@@ -29,7 +31,9 @@ const Footer = () => {
                 </Stack>
                 <Stack spacing={12}>
                     <Stack direction={"row"} spacing={6} w={"100%"}>
-                        <Text textStyle={"h1"}>coderhouse</Text>
+                        <Text color={"brand.200"} textStyle={"h1"}>
+                            coderhouse
+                        </Text>
                     </Stack>
                     <Stack>
                         <NavItem link="/" nombre="Nosotros" />
@@ -43,7 +47,7 @@ const Footer = () => {
                 </Stack>
             </Stack>
             <div className="text">
-                <Text p={2} textAlign={"center"} textStyle={"p"}>
+                <Text color={"brand.200"} p={2} textAlign={"center"} textStyle={"p"}>
                     © Copyright 2021 - Todos los derechos reservados
                 </Text>
             </div>

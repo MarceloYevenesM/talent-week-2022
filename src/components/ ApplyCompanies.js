@@ -30,8 +30,10 @@ const ApplyCompanies = () => {
                         w={{ base: "100%", md: "50%" }}
                         zIndex={1}
                     >
-                        <Text textStyle={"h1"}>¡date a conocer!</Text>
-                        <Text textAlign={"justify"} textStyle={"p"}>
+                        <Text color={"brand.200"} textStyle={"h1"}>
+                            ¡date a conocer!
+                        </Text>
+                        <Text color={"brand.200"} textAlign={"justify"} textStyle={"p"}>
                             Selecciona las empresas que te interesen para compartirles tu perfil y
                             que puedan tenerte en cuenta para oportunidades laborales actuales y
                             futuras.

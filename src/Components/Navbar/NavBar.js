@@ -42,7 +42,11 @@ const NavBar = () => {
                 <Link display={{ base: "none", md: "flex" }} href="/">
                     <NavLogo />
                 </Link>
-                <Text display={{ base: "flex", md: "none", lg: "flex" }} textStyle={"h1"}>
+                <Text
+                    color={"brand.200"}
+                    display={{ base: "flex", md: "none", lg: "flex" }}
+                    textStyle={"h1"}
+                >
                     talentweek
                 </Text>
             </Stack>

@@ -72,6 +72,7 @@ const Hero = () => {
                         spacing={12}
                     >
                         <Text
+                            color={"brand.200"}
                             fontSize={{ base: "1.6rem", md: "2rem" }}
                             textAlign={"justify"}
                             textStyle={"p"}
@@ -126,7 +127,7 @@ const Hero = () => {
                             h={{ base: "50px", md: "80px" }}
                             w={{ base: "50px", md: "80px" }}
                         />
-                        <Text textAlign={"justify"} textStyle={"p"}>
+                        <Text color={"brand.200"} textAlign={"justify"} textStyle={"p"}>
                             Si eres <strong>estudiante o graduado de coderhouse, </strong>podras
                             entrar en contacto con más de...
                             <strong> empresas líderes en tecnología.</strong>
