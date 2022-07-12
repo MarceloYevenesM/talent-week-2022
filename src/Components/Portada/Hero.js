@@ -1,4 +1,4 @@
-import { Button, Icon, Image, Stack, Text, Container, Link, Heading } from "@chakra-ui/react";
+import { Button, Icon, Image, Stack, Text, Container, Link } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { BsExclamationTriangleFill } from "react-icons/bs";
 
